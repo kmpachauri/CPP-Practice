@@ -2,6 +2,9 @@
 using namespace std;
 
 int main(){
+    int n;
+    cout << "Enter Number of Rows : ";
+    cin >> n;
 
     // // Pattern 1 -> square of 4 stars
     // for(int rows=1; rows<5; rows++){
@@ -13,6 +16,7 @@ int main(){
 
     // cout<<endl << endl;
 
+
     // // Pattern 2 -> Rectangle
     // for(int i=0; i<=2; i=i+1){
     //     for(int j=0; j<5; j=j+1){
@@ -22,6 +26,7 @@ int main(){
     // }
 
     // cout<<endl << endl;
+
 
     // Pattern 3 -> Hollow Rectangle
     // int ROWS ;
@@ -45,12 +50,9 @@ int main(){
     //     cout<< endl;
     // }
 
-    // Pattern 4 -> Half Pyramid
-    // int ROWS ;
-    // cout << "Enter Number of Rows : ";
-    // cin >> ROWS;
 
-    // for (int rows = 0; rows < ROWS; rows=rows+1){
+    // Pattern 4 -> Half Pyramid
+    // for (int rows = 0; rows < n; rows=rows+1){
 
     //     for(int cols = 0; cols < rows+1; cols = cols+1){
     //         cout <<"* ";
@@ -58,12 +60,9 @@ int main(){
     //     cout << endl;
     // }
     
-    // Inverted half Pyramid
-    // int ROWS ;
-    // cout << "Enter Number of Rows : ";
-    // cin >> ROWS;
 
-    // for (int rows = 0; rows < ROWS; rows=rows+1){
+    // Pattern 5 -> Inverted half Pyramid
+    // for (int rows = 0; rows < n; rows=rows+1){
 
     //     for(int cols = ROWS; cols > rows; cols = cols-1){
     //         cout <<"* ";
@@ -71,26 +70,361 @@ int main(){
     //     cout << endl;
     // }
 
-    // Numeric Half Pyramid
-    int n;
-    cout << "Enter Number of Rows : ";
-    cin >> n;
 
-    for(int row = 0; row < n;row=row+1){
-        for(int col=0; col<row+1; col=col+1){
-            cout << col+1 << " ";
-        }
-        cout << endl;
-    }
-    cout << endl << endl;
+    //Pattern 6 -> Numeric Half Pyramid
+    // for(int row = 0; row < n;row=row+1){
+    //     for(int col=0; col<row+1; col=col+1){
+    //         cout << col+1 << " ";
+    //     }
+    //     cout << endl;
+    // }
+    // cout << endl << endl;
 
-    // Inverted Numeric Half Pyramid
-    for(int row=0; row<n;row=row+1){
-        for(int col=0; col<n-row; col=col+1){
-            // cout<< col+1 <<" ";
-            cout<< n-col <<" ";          // for reverse counting
-        }
-        cout << endl;
-    }
+
+    // //Pattern 7 -> Inverted Numeric Half Pyramid
+    // for(int row=0; row<n;row=row+1){
+    //     for(int col=0; col<n-row; col=col+1){
+    //         // cout<< col+1 <<" ";
+    //         cout<< n-col <<" ";          // for reverse counting
+    //     }
+    //     cout << endl;
+    // }
+
+
+    //Pattern 8 -> Full Pyramid
+    // for(int row=0; row<n; row=row+1){
+    //      // Inner Loop for Space
+    //     for(int col=0; col<n-row-1; col=col+1){
+    //         cout << " ";
+    //     }
+
+    //     // Inner Loop for Star
+    //     for(int col=0; col<row+1; col=col+1){
+    //         cout << "* ";
+    //     }
+
+    //     cout << endl;
+    // }
+
+
+    //Pattern 9 -> Inverted Full Pyramid
+    // for(int row=0; row<n; row=row+1){
+    //      // Inner loop for space
+    //     for(int col=0; col<row; col=col+1){
+    //         cout << " ";
+    //     }
+    //      // Inner loop for Star
+    //     for(int col=0; col<n-row; col=col+1){
+    //         cout << "* ";
+    //     }        
+    //     cout << endl;
+    // }
+
+
+    // Pattern 10 -> Diamond Pattern
+    int num = n/2;
+    // for(int row=0; row<num; row=row+1){
+    //      // Inner Loop for Space
+    //     for(int col=0; col<num-row-1; col=col+1){
+    //         cout << " ";
+    //     }
+
+    //     // Inner Loop for Star
+    //     for(int col=0; col<row+1; col=col+1){
+    //         cout << "* ";
+    //     }
+
+    //     cout << endl;
+    // }
+    
+    // for(int row=0; row<num; row=row+1){
+    //     // Inner loop for space
+    //     for(int col=0; col<row; col=col+1){
+    //         cout << " ";
+    //     }
+    //      // Inner loop for Star
+    //     for(int col=0; col<num-row; col=col+1){
+    //         cout << "* ";
+    //     }        
+    //     cout << endl;
+    // }
+
+
+    // Pattern 11 -> Hollow Pyramid
+    // for(int row=0; row<n; row=row+1){
+    //      // Inner Loop for Space
+    //     for(int col=0; col<n-row-1; col=col+1){
+    //         cout << " ";
+    //     }
+
+    //     // Inner Loop for Star
+    //     for(int col=0; col<row+1; col=col+1){
+    //         if (col==0 || col==row)
+    //         {
+    //             cout << "* ";
+    //         }
+    //         else{
+    //             cout << "  ";
+    //         }
+            
+    //     }
+
+    //     cout << endl;
+    // }
+
+
+    // Pattern 12 -> Inverted Hollow Pyramid
+    // for(int row=0; row<n; row=row+1){
+    //     // Inner Loop for space
+    //     for(int col=0; col<row; col=col+1){
+    //         cout << " ";
+    //     }
+    //     // Inner loop for star
+    //     for(int col=0; col<n-row; col=col+1){
+    //          if (col==0 || col==n-row-1)
+    //         {
+    //             cout << "* ";
+    //         }
+    //         else{
+    //             cout << "  ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+
+
+    // Pattern 13 -> Hollow Diamond Pattern
+    // for(int row=0; row<num; row=row+1){
+    //      // Inner Loop for Space
+    //     for(int col=0; col<num-row-1; col=col+1){
+    //         cout << " ";
+    //     }
+
+    //     // Inner Loop for Star
+    //     for(int col=0; col<row+1; col=col+1){
+    //         if (col==0 || col==row)
+    //         {
+    //             cout << "* ";
+    //         }
+    //         else{
+    //             cout << "  ";
+    //         }
+            
+    //     }
+
+    //     cout << endl;
+    // }
+
+    //     for(int row=0; row<num; row=row+1){
+    //     // Inner Loop for space
+    //     for(int col=0; col<row; col=col+1){
+    //         cout << " ";
+    //     }
+    //     // Inner loop for star
+    //     for(int col=0; col<num-row; col=col+1){
+    //          if (col==0 || col==num-row-1)
+    //         {
+    //             cout << "* ";
+    //         }
+    //         else{
+    //             cout << "  ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+
+
+    // Pattern 14 -> Fliped Solid Pattern
+    // int num = n/2;
+    // for(int row=0; row<num; row=row+1){
+    //     for(int col=0; col<num-row; col=col+1){
+    //         cout<< "* ";
+    //     }
+    //     for(int col=0; col<2*row+1; col=col+1){
+    //         cout << "  ";
+    //     }
+    //     for(int col=0; col<num-row; col=col+1){
+    //         cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+    // for(int row=0; row<num; row=row+1){
+    //     for(int col=0; col<row+1; col=col+1){
+    //         cout<< "* ";
+    //     }
+    //     for(int col=0; col<2*(num-row)-1; col=col+1){
+    //         cout << "  ";
+    //     }
+    //     for(int col=0; col<row+1; col=col+1){
+    //         cout << "* ";
+    //     }
+    //       cout << endl;
+    // }
+
+
+    // Pattern 15 ->
+    // for(int i=0; i<num; i++){
+    //     for(int j=0; j<2*i+1; j++){
+    //         if(j%2==0){
+    //             cout << i+1;
+    //         }
+    //         else{
+    //             cout << " * ";
+    //         }
+    //     }
+    //     cout <<endl;
+    // }
+
+    // for(int i=0; i<num; i++){
+    //     for(int j=0; j<2*(num-i)-1; j++){
+    //         if(j%2==0){
+    //             cout << num-i;
+    //         }
+    //         else{
+    //             cout << " * ";
+    //         }
+    //     }
+    //     cout <<endl;
+    // }
+
+
+    // Pattern 16 -> Hollow Inverted Half Pyramid
+    // for(int row=0; row<n; row++){
+    //     for(int col=0; col<n-row; col=col+1){
+    //         if(col==0 || col==n-row-1 || row==0){
+    //             cout << "* ";
+    //         }
+    //         else{
+    //             cout << "  ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+
+
+    // Pattern 17
+    // for(int row=0; row<n; row=row+1){
+    //     char ch;
+    //     for(int col=0; col< row+1; col=col+1){
+    //         ch = col+ 65 ; // + 'A';
+    //         cout << ch << " ";
+    //     }
+    //     for(char alphabet=ch-1; alphabet >= 'A'; alphabet--){
+    //         cout << alphabet << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+
+    // Pattern 18 -> numeric Hollow Half Pyramid
+    // for(int r=0; r<n; r=r+1){
+    //     for(int c=0; c<n-r; c=c+1){
+    //         if(c==0 || c==n-r-1 || r==0){
+    //             cout<< c+r+1 << " ";
+    //         }
+    //         else{
+    //                 cout << "  ";
+    //             }          
+    //     }
+    //     cout << endl;
+    // }
+
+
+    // Pattern 20 -> Numeric Palindrome Equilateral Pyramid
+    //  for(int r=0; r<n; r=r+1){
+    //     // Inner Loop for Space 
+    //     for(int c=0; c<n-r-1; c=c+1){
+    //         cout << "  ";
+    //     }
+    //     // Inner Loop for Number 
+    //     for (int c=0; c<r+1; c=c+1){
+    //         cout<< c+1 << " ";
+    //     }
+    //     // Inner Loop for Reverse Numbering
+    //     for(int c=0; c<r; c=c+1){
+    //         cout<< r-c << " ";
+    //     }
+    //     cout << endl;
+    //  }
+
+
+    //  Pattern 21 ->  
+    // for(int r=0; r<n; r=r+1){
+    //     // Inner Loop for Inverted Star Half Pyramid
+    //     for(int c=0; c<2*n-r-2; c=c+1){
+    //         cout << "* ";
+    //     }
+    //     // Inner Loop for Full Pyramid
+    //     for(int c=0; c<r+1; c=c+1){
+    //         cout << r+1 << " * ";
+    //     }
+    //      // Inner Loop for Reverse Inverted Star Half Pyramid
+    //     for(int c=0; c<2*n-r-2; c=c+1){
+    //         cout << "* ";
+    //     }
+
+    //     cout << endl;
+    // }
+
+
+    // Pattern 22 -> Solid Half Diamond
+    // for(int r=0; r<n; r=r+1){
+    //     for(int c=0; c<r+1; c=c+1){
+    //         cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+    // for(int r=0; r<n-1; r=r+1){
+    //     for(int c=0; c<n-r-1; c=c+1){
+    //         cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+
+
+    // Pattern 23 -> floy'd Triangle
+    // for(int r=0; r<n; r=r+1){
+    //     for(int c=0; c<r+1; c=c+1){
+    //         int number;
+    //         cout << number+1<< " ";
+    //     }
+    //     cout << endl;
+    // }
+
+
+    // // pattern 24 -> Butterfly pattern
+    //     // Outer Loop for Upper part
+    // for(int r=0; r<num; r=r+1){
+    //     // inner Loop for left star
+    //     for(int c=0; c< r+1; c=c+1){
+    //         cout << "* ";
+    //     }
+    //     // inner loop for space
+    //     for(int c=0; c< 2*(num-r-1); c=c+1){
+    //         cout << "  ";
+    //     }
+    //     // inner Loop for right star
+    //     for(int c=0; c< r+1; c=c+1){
+    //         cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+    //     // // Outer Loop for Inner part
+    // for(int r=0; r<num; r=r+1){
+    //     // inner Loop for left star
+    //     for(int c=0; c< num-r; c=c+1){
+    //         cout << "* ";
+    //     }
+    //     // inner loop for space
+    //     for(int c=0; c< 2*r; c=c+1){
+    //         cout << "  ";
+    //     }
+    //     // inner Loop for right star
+    //     for(int c=0; c< num-r; c=c+1){
+    //         cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+
 
 }
