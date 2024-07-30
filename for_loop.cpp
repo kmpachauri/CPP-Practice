@@ -2,6 +2,34 @@
 using namespace std;
 
 int main(){
+    // Break Statement
+    // for (int i = 0; i <= 5; i++){
+    //    cout << i << endl;
+    //    if(i==4)
+    //    break;
+    // }
+
+    // Continue Statement
+    // for (int i = 0; i <=100; i++){
+    //     if (i%2==0)        
+    //     continue;
+    //     cout << i << " ";
+    // }
+
+    
+    // Printing Prime Number till 100
+    for(int i=2; i<=100; i++){
+        int j=2;
+        for(; j<i; j++){
+            if (i%j == 0)
+                break;                 
+        }
+        if(j==i)
+            cout << i << " "; 
+        
+    }
+
+    
     // // counting from 1 to 10
     // for(int i=1 ; i<11 ;i++){
     //     cout<<i << endl << '\n';

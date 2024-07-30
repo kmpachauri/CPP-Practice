@@ -2,6 +2,7 @@
 using namespace std;
 
 int main(){
+
     int n;
     cout << "Enter Number of Rows : ";
     cin >> n;
@@ -316,7 +317,7 @@ int main(){
     // }
 
 
-    // Pattern 18 -> numeric Hollow Half Pyramid
+    // Pattern 18 -> numeric Hollow Inverted Half Pyramid
     // for(int r=0; r<n; r=r+1){
     //     for(int c=0; c<n-r; c=c+1){
     //         if(c==0 || c==n-r-1 || r==0){
@@ -348,7 +349,7 @@ int main(){
     //  }
 
 
-    //  Pattern 21 ->  
+    //  Pattern 21 ->  Fancy pattern
     // for(int r=0; r<n; r=r+1){
     //     // Inner Loop for Inverted Star Half Pyramid
     //     for(int c=0; c<2*n-r-2; c=c+1){
@@ -383,48 +384,49 @@ int main(){
 
 
     // Pattern 23 -> floy'd Triangle
+    // int number = 1;
     // for(int r=0; r<n; r=r+1){
     //     for(int c=0; c<r+1; c=c+1){
-    //         int number;
-    //         cout << number+1<< " ";
+    //         cout << number << " ";
+    //         number++;
     //     }
     //     cout << endl;
     // }
 
 
-    // // pattern 24 -> Butterfly pattern
-    //     // Outer Loop for Upper part
-    // for(int r=0; r<num; r=r+1){
-    //     // inner Loop for left star
-    //     for(int c=0; c< r+1; c=c+1){
-    //         cout << "* ";
-    //     }
-    //     // inner loop for space
-    //     for(int c=0; c< 2*(num-r-1); c=c+1){
-    //         cout << "  ";
-    //     }
-    //     // inner Loop for right star
-    //     for(int c=0; c< r+1; c=c+1){
-    //         cout << "* ";
-    //     }
-    //     cout << endl;
-    // }
-    //     // // Outer Loop for Inner part
-    // for(int r=0; r<num; r=r+1){
-    //     // inner Loop for left star
-    //     for(int c=0; c< num-r; c=c+1){
-    //         cout << "* ";
-    //     }
-    //     // inner loop for space
-    //     for(int c=0; c< 2*r; c=c+1){
-    //         cout << "  ";
-    //     }
-    //     // inner Loop for right star
-    //     for(int c=0; c< num-r; c=c+1){
-    //         cout << "* ";
-    //     }
-    //     cout << endl;
-    // }
+    // pattern 24 -> Butterfly pattern
+        // Outer Loop for Upper part
+    for(int r=0; r<num; r=r+1){
+        // inner Loop for left star
+        for(int c=0; c< r+1; c=c+1){
+            cout << "* ";
+        }
+        // inner loop for space
+        for(int c=0; c< 2*(num-r-1); c=c+1){
+            cout << "  ";
+        }
+        // inner Loop for right star
+        for(int c=0; c< r+1; c=c+1){
+            cout << "* ";
+        }
+        cout << endl;
+    }
+        // // Outer Loop for Inner part
+    for(int r=0; r<num; r=r+1){
+        // inner Loop for left star
+        for(int c=0; c< num-r; c=c+1){
+            cout << "* ";
+        }
+        // inner loop for space
+        for(int c=0; c< 2*r; c=c+1){
+            cout << "  ";
+        }
+        // inner Loop for right star
+        for(int c=0; c< num-r; c=c+1){
+            cout << "* ";
+        }
+        cout << endl;
+    }
 
 
 }
