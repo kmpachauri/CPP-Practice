@@ -188,18 +188,18 @@ int main(){
     // }
 
     // Fancy Pattern #3 -> Pura nhi h ye
-    // for(int row = 0; row < n; row++){
-    //     int col;
-    //     for(col=0; col<row+1; col++){
-    //         if(col==0 || row==0){
-    //             cout << "* ";
-    //         }
-    //         else{
-    //             cout << col << " ";
-    //         }
-    //     }
-    //     cout << endl;
-    // }
+    for(int row = 0; row < n; row++){
+        int col;
+        for(col=0; col<row+1; col++){
+            if(col==0 || row==0){
+                cout << "* ";
+            }
+            else{
+                cout << col << " ";
+            }
+        }
+        cout << endl;
+    }
 
     // Flyod's triangle
     // int count = 0;
@@ -212,12 +212,12 @@ int main(){
     // }
 
     // pascal's triangle
-    for(int r=1; r<=n; r++){
-        int count=1;
-        for(int c=1; c<=r; c++){
-            cout << count << " ";
-            count = count*(r-c)/c;
-        }
-        cout << endl;
-    }
+    // for(int r=1; r<=n; r++){
+    //     int count=1;
+    //     for(int c=1; c<=r; c++){
+    //         cout << count << " ";
+    //         count = count*(r-c)/c;
+    //     }
+    //     cout << endl;
+    // }
 }

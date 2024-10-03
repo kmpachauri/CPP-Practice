@@ -349,7 +349,7 @@ int main(){
     //  }
 
 
-    //  Pattern 21 ->  Fancy pattern
+    //  Pattern 21 ->  Fancy pattern 1
     // for(int r=0; r<n; r=r+1){
     //     // Inner Loop for Inverted Star Half Pyramid
     //     for(int c=0; c<2*n-r-2; c=c+1){
@@ -384,49 +384,116 @@ int main(){
 
 
     // Pattern 23 -> floy'd Triangle
-    // int number = 1;
-    // for(int r=0; r<n; r=r+1){
-    //     for(int c=0; c<r+1; c=c+1){
-    //         cout << number << " ";
-    //         number++;
+    int number = 1;
+    for(int r=0; r<n; r=r+1){
+        for(int c=0; c<r+1; c=c+1){
+            cout << number << " ";
+            number++;
+        }
+        cout << endl;
+    }
+
+    // Pattern 24 -> fancy Pattern 2
+    // int number1 = 1;
+    // for(int r=0; r<n; r++){
+    //     for(int c=0; c<2*r+1; c++){
+    //         if(c%2==0){
+    //             cout << number1 ;
+    //             number1 ++;
+    //         }
+    //         else{
+    //             cout << "*";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // int number2 = number1-n;
+    // for(int r=0; r<n; r++){
+    //     int start = number2;
+    //     for(int c=0; c<2*(n-r)-1; c++){
+    //         if(c%2==0){
+    //             cout << start ;
+    //             start++;
+    //         }
+    //         else{
+    //             cout << "*";
+    //         }
+    //     }
+    //     number2 = number2 - (n-r-1);
+    //     cout << endl;
+    // }
+
+    // Pattern 25 -> Fancy pattern 3
+    // if(n%2 == 0)
+    //     n=n/2;
+    // else
+    //     n=(n/2)+1;
+    // cout << "*" << endl;
+    // for(int r=0; r<n-1; r++){
+    //     cout << "*" << " ";
+    //     for(int c=0; c<r+1; c++){
+    //         cout << c+1 << " ";
+    //     }
+    //     for(int c=0; c<r; c++){
+    //         cout << r-c << " ";
+    //     }
+    //     cout << "*" << " ";
+    //     cout << endl;
+    // }
+    // for(int r=0; r<n; r++){
+    //     cout << "*" << " ";
+    //     for(int c=0; c<n-r; c++){
+    //         cout << c+1 << " ";
+    //     }
+    //     for(int c=0; c<n-r-1; c++){
+    //         cout << n-c-r-1 << " ";
+    //     }
+    //     cout << "*" << " ";
+    //     cout << endl;
+    // }
+    // cout << "*" << endl;
+
+    // pattern 26 -> Butterfly pattern
+        // Outer Loop for Upper part
+    // for(int r=0; r<num; r=r+1){
+    //     // inner Loop for left star
+    //     for(int c=0; c< r+1; c=c+1){
+    //         cout << "* ";
+    //     }
+    //     // inner loop for space
+    //     for(int c=0; c< 2*(num-r-1); c=c+1){
+    //         cout << "  ";
+    //     }
+    //     // inner Loop for right star
+    //     for(int c=0; c< r+1; c=c+1){
+    //         cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+    //     // // Outer Loop for Inner part
+    // for(int r=0; r<num; r=r+1){
+    //     // inner Loop for left star
+    //     for(int c=0; c< num-r; c=c+1){
+    //         cout << "* ";
+    //     }
+    //     // inner loop for space
+    //     for(int c=0; c< 2*r; c=c+1){
+    //         cout << "  ";
+    //     }
+    //     // inner Loop for right star
+    //     for(int c=0; c< num-r; c=c+1){
+    //         cout << "* ";
     //     }
     //     cout << endl;
     // }
 
-
-    // pattern 24 -> Butterfly pattern
-        // Outer Loop for Upper part
-    for(int r=0; r<num; r=r+1){
-        // inner Loop for left star
-        for(int c=0; c< r+1; c=c+1){
-            cout << "* ";
-        }
-        // inner loop for space
-        for(int c=0; c< 2*(num-r-1); c=c+1){
-            cout << "  ";
-        }
-        // inner Loop for right star
-        for(int c=0; c< r+1; c=c+1){
-            cout << "* ";
+    // Pattern 27 -> Pascal's Triangle Pattern
+    for(int r=1; r<=n; r++){
+        int P = 1;
+        for(int c=1; c<=r; c++){
+            cout << P << " ";
+            P = P * (r-c) / c;
         }
         cout << endl;
     }
-        // // Outer Loop for Inner part
-    for(int r=0; r<num; r=r+1){
-        // inner Loop for left star
-        for(int c=0; c< num-r; c=c+1){
-            cout << "* ";
-        }
-        // inner loop for space
-        for(int c=0; c< 2*r; c=c+1){
-            cout << "  ";
-        }
-        // inner Loop for right star
-        for(int c=0; c< num-r; c=c+1){
-            cout << "* ";
-        }
-        cout << endl;
-    }
-
-
 }
